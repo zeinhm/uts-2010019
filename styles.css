@@ -7,49 +7,28 @@ body, html {
   align-items: center;
 }
 
-main {  
+section {  
   background-color: #F8F8F8;
   border-radius: 1.5rem;
   box-shadow: -0.75rem 0.5rem 1.25rem rgba(173, 182, 217, 0.170884);
-  width: 40rem;
+  width: 20rem;
   padding: 5rem;
 }
 
-.table {
-  background-color: #FFFFFF;
-  border-radius: 1.5rem;
-  border-spacing: 0;
-  color: #333333;
-  font-size: 0.95rem;
-  line-height: 0.875rem;
-  text-align: left;
-  width: 100%;
-  box-shadow: -0.75rem 0.5rem 1.25rem rgba(173, 182, 217, 0.170884);
+section > form {
+  display: flex;
+  flex-direction: column;
 }
 
-.table img {
-  border-radius: 50%;
-  box-shadow: -0.75rem 0.5rem 1.25rem rgba(173, 182, 217, 0.170884);
+section > form > div {
+  margin: .5rem;
+  display: flex;
+  justify-content: space-between;
 }
 
-.table th {
-  font-weight: bold;
-  padding: 1.125rem 1.5rem;
-  text-align: center;
-}
-
-.table tr:nth-child(1) {
-  border-bottom: 1px solid rgba(209, 216, 245, 0.6);
-}
-
-.table #last-corner {
-  border-radius: 0 0 0 1.5rem;
-}
-
-.table tr:nth-child(even) {
-  background-color: #FEEEEE;
-}
-
-.table td {
-  padding: 0.625rem 1.25rem;
+section > form > div input,
+section > form > div select{
+  padding: .5rem;
+  width:100%;
+  box-sizing:border-box;
 }
